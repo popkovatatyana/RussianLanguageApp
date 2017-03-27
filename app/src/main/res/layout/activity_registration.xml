@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.popkova.russianlanguageapp.RegistrationActivity">
+
+    <TextView
+        android:text="@string/registrationDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/REGISTRATION_DESCRIPTION" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/REGISTRATION_DESCRIPTION"
+        android:layout_alignStart="@+id/REGISTRATION_DESCRIPTION"
+        android:layout_marginTop="25dp"
+        android:id="@+id/NAME_REGISTER"
+        android:hint="@string/name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/NAME_REGISTER"
+        android:layout_alignEnd="@+id/NAME_REGISTER"
+        android:layout_marginTop="22dp"
+        android:id="@+id/SURNAME"
+        android:hint="@string/surname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/SURNAME"
+        android:layout_alignStart="@+id/SURNAME"
+        android:layout_marginTop="23dp"
+        android:id="@+id/AGE_REGISTER"
+        android:hint="@string/age" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/AGE_REGISTER"
+        android:layout_alignStart="@+id/AGE_REGISTER"
+        android:layout_marginTop="25dp"
+        android:id="@+id/EMAIL_REGISTER"
+        android:hint="@string/email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/EMAIL_REGISTER"
+        android:layout_alignEnd="@+id/EMAIL_REGISTER"
+        android:layout_marginTop="21dp"
+        android:id="@+id/PASSWORD_REGISTER"
+        android:hint="@string/password" />
+
+    <Button
+        android:text="@string/accountCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PASSWORD_REGISTER"
+        android:layout_marginTop="15dp"
+        android:id="@+id/REGISTER_BUTTON"
+        android:layout_alignStart="@+id/PASSWORD_REGISTER"
+        android:layout_alignEnd="@+id/PASSWORD_REGISTER" />
+</RelativeLayout>
