@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
         userLocalStore = new UserLocalStore(this);
 
         View headerLayout = navigationView.getHeaderView(0);
